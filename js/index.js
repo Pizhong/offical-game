@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 17:29:01
- * @LastEditTime: 2021-01-29 14:31:43
+ * @LastEditTime: 2021-01-29 15:18:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical-game\js\index.js
@@ -54,81 +54,8 @@ function handleContactThis(index){
     }
   }
 }
-/**
- * @description: 轮播图
- * @param {*} index
- * @return {*}
- */
-function  gotoPage(index) {
-  currentIndex=index
-  // console.log(currentIndex);
-  showBanner(currentIndex)
-  showBannerIndex(currentIndex)
-}
-/**
- * @description: 定时切换图片
- * @param {*}
- * @return {*}
- */
-function runInv(){
-  timer=setInterval(() => {
-    gotoPage(nextIndex())
-  }, 5000)
-}
-/**
- * @description: 下一页
- * @param {*}
- * @return {*}
- */
-function nextIndex(){
-  if(currentIndex == bannerArray.length - 1) {
-    return 0;
-  }else {
-    if(currentIndex<bannerArray.length){
-      return currentIndex + 1;
-    }
-  }
-}
-/**
- * @description: 上一页
- * @param {*}
- * @return {*}
- */
-function  prevIndex() {
-  if(currentIndex == 0) {
-    return bannerArray.length - 1;
-  }else{
-    return currentIndex - 1;
-  }
-}
-/**
- * @description: banner显示
- * @param {*} index
- * @return {*}
- */
-function showBanner(index){
-  var html=''
-    html += '<img src="'+bannerArray[index]+'">'
-  $('.item').html(html)
-}
-/**
- * @description: 展示当前是第几张图片
- * @param {*} index
- * @return {*}
- */
-function showBannerIndex(index){
-  var html=''
-  for(let i=0;i<bannerArray.length;i++){
-    html += '<li><div class="current tab" onclick="gotoPage('+i+')"></div></li>'
-  }
-  
-  $('.banner-page ul').html(html)
-  for(let i=0;i<bannerArray.length;i++){
-    if(index==i){
-      $('.tab').eq(index).css('background-color','blue')
-    }
-  }
-}
+
+
 
 /**
  * @description: 锚点
@@ -139,10 +66,32 @@ function toHover(index){
   document.getElementById('hover'+index).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
 
 }
+/**
+ * @description: 轮播图
+ * @param {*}
+ * @return {*}
+ */
+var mySwiper = new Swiper ('.swiper-container', {
+  direction: 'horizontal', // 垂直切换选项
+  loop: true, // 循环模式选项
+  autoplay:true, //自动播放
+  // 如果需要分页器
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // 如果需要前进后退按钮
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
+  
+})        
+
+
 
 $(document).ready(function(){
-  gotoPage(0)
-  runInv()
+ 
   handleAboutThis(1)
   handleContactThis(1)
 })
