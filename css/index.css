@@ -415,6 +415,6 @@ top: 50%;
 }
 .swiper-pagination-bullet{
   width: 25px !important;
-  height: 2px !important;
+  height: 5px !important;
   border-radius: 0 !important;
 }
