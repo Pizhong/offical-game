@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 17:29:01
- * @LastEditTime: 2021-01-29 12:27:42
+ * @LastEditTime: 2021-01-29 14:31:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical-game\js\index.js
@@ -15,6 +15,13 @@ var contactDataList=['海外合作','市场合作','商务合作','应聘咨询'
 var currentIndex=0
 var timer
 var bannerArray=['../img/banner.png','../img/banner.png']
+
+
+/**
+ * @description:关于我们的内容切换 
+ * @param {*} index
+ * @return {*}
+ */
 function  handleAboutThis(index){
   console.log(index);
   
@@ -29,7 +36,11 @@ function  handleAboutThis(index){
           }
         }
 } 
-
+/**
+ * @description: 联系我们内容切换
+ * @param {*} index
+ * @return {*}
+ */
 function handleContactThis(index){
   
   for(let k in isContact){
@@ -43,20 +54,32 @@ function handleContactThis(index){
     }
   }
 }
-
+/**
+ * @description: 轮播图
+ * @param {*} index
+ * @return {*}
+ */
 function  gotoPage(index) {
   currentIndex=index
   // console.log(currentIndex);
   showBanner(currentIndex)
   showBannerIndex(currentIndex)
 }
-
+/**
+ * @description: 定时切换图片
+ * @param {*}
+ * @return {*}
+ */
 function runInv(){
   timer=setInterval(() => {
     gotoPage(nextIndex())
   }, 5000)
 }
-
+/**
+ * @description: 下一页
+ * @param {*}
+ * @return {*}
+ */
 function nextIndex(){
   if(currentIndex == bannerArray.length - 1) {
     return 0;
@@ -66,7 +89,11 @@ function nextIndex(){
     }
   }
 }
-
+/**
+ * @description: 上一页
+ * @param {*}
+ * @return {*}
+ */
 function  prevIndex() {
   if(currentIndex == 0) {
     return bannerArray.length - 1;
@@ -74,13 +101,21 @@ function  prevIndex() {
     return currentIndex - 1;
   }
 }
-
+/**
+ * @description: banner显示
+ * @param {*} index
+ * @return {*}
+ */
 function showBanner(index){
   var html=''
     html += '<img src="'+bannerArray[index]+'">'
   $('.item').html(html)
 }
-
+/**
+ * @description: 展示当前是第几张图片
+ * @param {*} index
+ * @return {*}
+ */
 function showBannerIndex(index){
   var html=''
   for(let i=0;i<bannerArray.length;i++){
@@ -95,7 +130,11 @@ function showBannerIndex(index){
   }
 }
 
-
+/**
+ * @description: 锚点
+ * @param {*} index
+ * @return {*}
+ */
 function toHover(index){
   document.getElementById('hover'+index).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
 
