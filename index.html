@@ -1,0 +1,264 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-01-27 17:27:18
+ * @LastEditTime: 2021-01-29 14:24:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \offical-game\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>掠宝网络科技</title>
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  
+</head>
+<body>
+  <div class="container" id="hover0">
+    <!-- 导航栏 -->
+    <div class="nav-container">
+      <div class="nav-logo clearfix">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <div class="nav-select clearfix">
+        <ul>
+          <li><button onclick="toHover(0)">首页</button></li>
+          <li><button onclick="toHover(1)">产品中心</button></li>
+          <li><button onclick="toHover(2)">关于我们</button></li>
+          <li><button onclick="toHover(3)">联系我们</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- banner部分 -->
+    <!-- <div class="home-banner"> -->
+      <div class="banner">
+        <div class="item">
+          <!-- <img src="./img/banner.png" alt="">
+          <img src="./img/banner.png" alt=""> -->
+
+        </div> 
+        <div class="banner-page flex">
+          <ul></ul>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- 项目中心 -->
+    <div class="product-center" style="position:relative;">
+      <div class="box" id="hover1"></div>
+      <div class="center-title">
+        <img src="./img/centerTextCN.png" class="img-CN">
+        <img src="./img/centerTextEN.png" class="img-EN">
+      </div>
+      <div class="center-item clearfix flex">
+        <ul>
+          <li>
+            <div>
+              <div class="item-top">
+                <img src="./img/item1.png" class="top-first-img">
+                <img src="./img/line.png" class="top-second-img">
+                <span class="item-title">《怪兽世界》</span>
+              </div>
+              <div class="bottom">
+                <span class="game-download">游戏下载</span>
+                <span class="enter-offical" @click="handleEnter()">进入官网</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div class="item-top">
+                <img src="./img/item2.png" class="top-first-img">
+                <img src="./img/line.png" class="top-second-img">
+                <span class="item-title">《怪兽世界》</span>
+              </div>
+              <div class="bottom">
+                <span class="game-download">游戏下载</span>
+                <span class="enter-offical" @click="handleEnter()">进入官网</span>
+              </div>
+            </div>
+          </li>
+          <li class="mgr0">
+            <div>
+              <div class="item-top">
+                <img src="./img/item3.png" class="top-first-img">
+                <img src="./img/line.png" class="top-second-img">
+                <span class="item-title">《怪兽世界》</span>
+              </div>
+              <div class="bottom">
+                <span class="game-download">游戏下载</span>
+                <span class="enter-offical" @click="handleEnter()">进入官网</span>
+              </div>
+            </div>
+          </li>
+          <!-- <li>
+            <div>
+              <div class="item-top">
+                <img src="../assets/image/item4.png" class="top-first-img">
+                <img src="../assets/image/line.png" class="top-second-img">
+                <span class="item-title">《怪兽世界》</span>
+              </div>
+              <div class="bottom">
+                <span class="game-download">游戏下载</span>
+                <span class="enter-offical">进入官网</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div class="item-top">
+                <img src="../assets/image/item5.png" class="top-first-img">
+                <img src="../assets/image/line.png" class="top-second-img">
+                <span class="item-title">《怪兽世界》</span>
+              </div>
+              <div class="bottom">
+                <span class="game-download">游戏下载</span>
+                <span class="enter-offical">进入官网</span>
+              </div>
+            </div>
+          </li>
+          <li class="mgr0">
+            <div>
+              <div class="item-top">
+                <img src="../assets/image/item6.png" class="top-first-img">
+                <img src="../assets/image/line.png" class="top-second-img">
+                <span class="item-title">《怪兽世界》</span>
+              </div>
+              <div class="bottom">
+                <span class="game-download">游戏下载</span>
+                <span class="enter-offical">进入官网</span>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+      <div class="page flex">
+        <div class="page-left flex">&lt;</div>
+        <ul>
+          <li class="flex"> 1 </li>
+        </ul>
+        <div class="page-right flex">&gt;</div>
+      </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="about-us flex" style="position:relative;">
+      <div class="box1" id="hover2"></div>
+      <div class="center-title mgt45 mgb28">
+        <img src="./img/aboutusCN.png" class="img-CN">
+        <img src="./img/aboutusEN.png" class="img-EN">
+      </div>
+      <!-- <div class="show-img flex">
+        <ul>
+          <li><img src="../assets/image/us-img1.png" alt=""></li>
+          <li><img src="../assets/image/us-img2.png" alt=""></li>
+          <li><img src="../assets/image/us-img3.png" alt=""></li>
+        </ul>
+      </div> -->
+      <div class="about-content">
+        <div class="about-content-title flex">
+          <ul>
+            <li onclick="handleAboutThis(1)">公司状况</li>
+            <li onclick="handleAboutThis(2)">成长历程</li>
+            <li onclick="handleAboutThis(3)">获奖情况</li>
+           
+          </ul>
+        </div>
+        <div class="about-content-main" id="aboutTab1" style="display: none;">
+          <ul>
+            <li>
+              <p>掠宝网络，全称广东掠宝网络科技有限公司，成立于2018年，是一家专注于区块链技术研究及区块链游戏应用落地的研发型企业。</p>
+            </li>
+            <li>
+              <p>掠宝网络具备丰富的区块链游戏开发经验，不断探索区块链技术与传统网络游戏的结合，致力于用区块链技术为游戏赋能，在降低区块链普通玩家进入门槛上取得了显著成效。</p>
+            </li>
+            <li>
+              <p>旗下怪兽派（XPET）游戏工作室先后推出的《怪兽世界》《宠斗牌》《三国争霸》《梦幻怪兽》等区块链游戏，获得大量区块链游戏玩家的高度认可，积累了丰富的游戏社区运营经验，为今后研运一体打下了坚实的基础。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="about-content-main " id="aboutTab2" style="display: none;" >
+          <ul>
+            <li>
+              <p>2018年：掠宝网络（LOOTGAME）成立。</p>
+            </li>
+            <li>
+              <p>2019年：掠宝自主研发的首款RPG养成类区块链游戏《怪兽世界》正式上线，是国内区块链游戏的代表作，同年发行的支线卡牌游戏《宠斗牌》，开创了区块链游戏资产跨游复用的先河，在区块链游戏领域获得多方赞誉。</p>
+            </li>
+            <li>
+              <p>2020年：掠宝自主研发的基于三国IP的SLG策略游戏《三国争霸》和基于西游IP的2D回合制游戏《梦幻怪兽》正式上线，是国内首款2D回合制区块链游戏，获得高度关注。</p>
+              </li>
+          </ul>
+        </div>
+        <div class="about-content-main " id="aboutTab3" style="display: none;" >
+          <ul>
+            <li>
+              <p>2019Dapp最具创新奖   权威区块链财经媒体金色财经颁发</p>
+            </li>
+            <li>
+              <p>2019最佳区块链游戏   权威区块链游戏媒体游戏茶馆颁发</p>
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+    <!-- 联系我们 -->
+    <div class="contact-us flex" style="position:relative;">
+      <div class="center-title mgb60" id="hover3">
+        <img src="./img/contactusCN.png" class="img-CN">
+        <img src="./img/contactusEN.png" class="img-EN">
+      </div>
+      <div class="contact-us-controduce flex">
+        <ul>
+          <li><img src="./img/logo2.png" ></li>
+          <li><div></div></li>
+          <li><p>网络网络成立至今，已经成为中国坚持自主研发民族原创网游的新兴品牌。并且成为华南地区少数拥有，研发、运营、发行一体化能力以及拥有端游、页游、手游多平台多维度多产品的研发型
+            网络游戏公司。淘乐网络与国内数百家媒体保持长期合作关系，产品出口东南亚、南亚数十个国家和地区，未来将在全领域与世界一流游戏公司合作，立志成为国内线游戏厂商。＂真诚互信，包容开放”x欢迎与您合作。</p></li>
+        </ul>
+      </div>
+      <div class="contact-content">
+        <div class="contact-content-title flex mgb36">
+          <ul>
+            <li onclick="handleContactThis(1)">市场合作</li>
+            <li onclick="handleContactThis(2)">商务合作</li>
+            <li onclick="handleContactThis(3)">应聘咨询</li>
+            <li onclick="handleContactThis(4)">客服专线</li>
+          </ul>
+        </div>
+        <div class="contact-content-main" id="contactTab1" style="display: none;">
+          <p class="contact-first-p">掠宝希望通过与各大游戏媒体网站、平台、渠道，游戏KOL建立长期稳定的合作伙伴关系，互利双方共建品牌。</p>
+          <p class="contact-person">联系人：王先生</p>
+          <p class="contact-email">邮箱：61587283@qq.com</p>
+        </div>
+        <div class="contact-content-main"  id="contactTab2" style="display: none;">
+          <p class="contact-first-p">掠宝欢迎各类机构及个人合作，共建异业联盟，促进双方共同发展</p>
+          <p class="contact-person">联系人：王先生</p>
+          <p class="contact-email">邮箱：61587283@qq.com</p>
+        </div>
+        <div class="contact-content-main" id="contactTab3" style="display: none;">
+          <p class="contact-first-p">掠宝欢迎致力于区块链及游戏领域的有识之士前来咨询，共谋发展</p>
+          <p class="contact-person">联系人：苏小姐</p>
+          <p class="contact-email">邮箱：46894795@qq.com</p>
+        </div>
+        <div class="contact-content-main"  id="contactTab4" style="display: none;">
+          <p class="contact-first-p">您对产品和项目内容有任何问题，请您第一时间与我们的客服联系。</p>
+          <p class="contact-person">客服微信：LootGlobal</p>
+        </div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="footer clearfix flex">
+      
+        <p>掠宝（粤ICP备18004981号-2）游戏资产交易平台 版权所有 2019-2020</p> 
+      
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="./js/rem.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>
