@@ -41,14 +41,14 @@ ul, ol, li { list-style: none; font-family:'黑体'; }
 }
 
 .mgt45{
-  margin-top: 45px;
+  margin-top: 0.45rem;
 }
 .mgt175{
-  margin-top: 175px;
+  margin-top: 1.75rem;
 }
 .mgb28{
-  margin-bottom: 28px;
+  margin-bottom: 0.28rem;
 }
 .mgb36{
-  margin-bottom: 36px;
+  margin-bottom: 0.36rem;
 }

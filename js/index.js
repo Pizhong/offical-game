@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 17:29:01
- * @LastEditTime: 2021-01-29 15:18:15
+ * @LastEditTime: 2021-02-22 18:13:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical-game\js\index.js
@@ -95,5 +95,4 @@ $(document).ready(function(){
   handleAboutThis(1)
   handleContactThis(1)
 })
-
 
