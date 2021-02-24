@@ -422,11 +422,11 @@ top: 50%;
 
 
 @media screen and (max-width:450px){
-  .nav-select {
+  /* .nav-select {
     position: absolute;
     top: -0.55rem;
     right: 0;
-  }
+  } */
   #center-title{
     margin-top: -0.17rem;
   }
