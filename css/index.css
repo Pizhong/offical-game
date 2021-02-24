@@ -19,7 +19,7 @@
 }
 .nav-select{
   float: right;
-  margin-top:0.10rem;
+  margin-top:0.05rem;
   margin-right: 1.00rem;
   
   
@@ -269,7 +269,7 @@ top: 50%;
 }
 .about-content,
 .contact-content{
-  width: 10.45rem;
+  width: 9.45rem;
 }
 .about-content-title,
 .contact-content-title{
@@ -422,7 +422,7 @@ top: 50%;
 
 
 @media screen and (max-width:450px){
-  .nav-select {
+  /* .nav-select {
     position: absolute;
     top: -25%;
     transform: translateY(-25%);
@@ -430,7 +430,7 @@ top: 50%;
     -webkit-transform:translateY(-25%);
     -moz-transform:translateY(-25%);
     right: 0;
-  }
+  } */
   #center-title{
     margin-top: -0.17rem;
   }
