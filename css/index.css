@@ -424,11 +424,11 @@ top: 50%;
 @media screen and (max-width:450px){
   .nav-select {
     position: absolute;
-    top: -40%;
-    transform: translateY(-40%);
-    -ms-transform:translateY(-40%);
-    -webkit-transform:translateY(-40%);
-    -moz-transform:translateY(-40%);
+    top: -25%;
+    transform: translateY(-25%);
+    -ms-transform:translateY(-25%);
+    -webkit-transform:translateY(-25%);
+    -moz-transform:translateY(-25%);
     right: 0;
   }
   #center-title{
