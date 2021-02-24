@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 17:29:01
- * @LastEditTime: 2021-02-22 18:13:33
+ * @LastEditTime: 2021-02-24 12:20:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical-game\js\index.js
@@ -87,6 +87,25 @@ var mySwiper = new Swiper ('.swiper-container', {
   
   
 })        
+
+
+
+/**
+ * @description: 点击项目中心栏目跳转
+ * @param {*}
+ * @return {*}
+ */
+
+function officalsite(index) {
+  if(index == 1){
+    window.open("https://mhxpeth5.xlootcn.com");
+  }else if(index == 2){
+    window.open("https://nftsango.xloot.io");
+  }else if(index == 3){
+    window.open("http://www.xpet.com");
+  }
+}
+
 
 
 
